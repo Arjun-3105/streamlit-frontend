@@ -17,7 +17,7 @@ if user_input:
     with st.spinner("Thinking..."):
         try:
             response = requests.post(
-                "https://render-mental-health-bot.onrender.com/chat",  # Change to your deployed FastAPI URL later
+                "https://render-mental-health-bot.onrender.com/chat",  # URL to render-deploment
                 json={"user_message": user_input}
             )
             bot_reply = response.json()["response"]
@@ -26,7 +26,6 @@ if user_input:
 
         st.session_state.chat_history.append({"role": "bot", "text": bot_reply})
 
-# Display chat
 for message in st.session_state.chat_history:
     with st.chat_message("user" if message["role"] == "user" else "assistant"):
         st.markdown(message["text"])
