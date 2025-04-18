@@ -77,7 +77,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.title("🌼 MindMend – Your Friendly Mental Health Chatbot")
+st.title("🌼 Mindhub – Your Friendly Mental Health Chatbot")
 st.markdown("Hey there! 👋 I'm here to listen and support you. Remember, you're never alone. 💖")
 
 if "chat_history" not in st.session_state:
