@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.set_page_config(page_title="MindMend Chatbot", layout="centered", page_icon="🧠")
+st.set_page_config(page_title="MindHub Chatbot", layout="centered", page_icon="🧠")
 
 st.markdown("""
     <style>
